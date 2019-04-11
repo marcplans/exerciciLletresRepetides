@@ -38,7 +38,7 @@ public class Main {
 	
 	/* 
 	 * Crea una taula (char[]) amb el teu nom on cada posició correspongui a una lletra
-	 * Fes un bucle que recorri aquesta taula i mostri per consola cadascuna de les lletres.
+	 * Fes un bucle que recorri aquesta taula i mostri per consola cadascuna de les lletres
 	 */
 	public static void phase1(char[] nameArray) {
 		for (char c : nameArray) {
@@ -87,7 +87,10 @@ public class Main {
 	
 	
 	/* 
-	 * Emmagatzemar en un Map tant les lletres de la llista com el nombre de vegades que apareixen
+	 * Crea una altra llista amb el teu cognom on cada posició correspongui a una lletra
+	 * Fusiona les dues llistes en una sola. A més, afegeix una posició amb un espai buit 
+	 * entre la primera i la segona. És a dir, partim de la llista name i surname i al 
+	 * acabar l’execució només tindrem una que es dirà fullName
 	 */
 	public static void phase4(List<Character> nameList, List<Character> surnameList) {
 		List<Character> fullName = new ArrayList<Character>();
@@ -97,6 +100,3 @@ public class Main {
 		System.out.println("FullName:" + fullName.toString());
 	}
 }
-
-
-
